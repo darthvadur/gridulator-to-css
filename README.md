@@ -6,7 +6,7 @@ URL to tool: [davearthurweb.com/gridulator-to-css](http://davearthurweb.com/grid
 
 [Gridulator](http://gridulator.com) is a handy tool to quickly design simple pixel based grids. Unfortunately, it doesn't create the CSS for the grid system.
 
-I initially created this tool for my Langara [CSS Fundamentals](http://davearthurweb.com/courses/css/) class to help teach grid systems in CSS. Calculating CSS for grids is annoying so I wanted to simplify the process!
+I initially created this tool for my Langara [CSS Fundamentals](http://davearthurweb.com/courses/css/) class to help teach grid systems in web design. Calculating CSS for grids is annoying so I wanted to simplify the process!
 
 ## What's New?
 
