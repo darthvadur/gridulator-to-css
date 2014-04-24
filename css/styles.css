@@ -1,0 +1,133 @@
+/* Gridulator to CSS main stylesheet (or lack of... ;) ) */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-family: Georgia, Times, serif;
+}
+
+fieldset {
+	border: none;
+}
+
+.input-group > label {
+	display: inline-block;
+	margin-right: 10px;
+	white-space: nowrap; 
+}
+
+
+
+input[type="text"], input[type="number"] {
+	font-family: Georgia, Times, serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 5px;
+	width: 4.5em;
+	margin-bottom: 15px;
+}
+
+input[type="radio"] {
+	margin: 0 20px;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+
+.clr {
+	clear: both;
+}
+
+.clr:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.row div {
+	float: left;
+	padding: 10px 0;
+}
+
+.row > a {
+	text-decoration: none;
+	display: block;
+	color: #333;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.grid-col {
+	background: rgba(0,0,255,0.1);
+	text-align: center;
+	white-space: nowrap;
+}
+
+.selected {
+	background: rgba(0,0,255,0.5);
+	color: #fff;
+}
+
+.remaining {
+	background: rgba(0,0,0,0.1);
+}
+
+#inner-preview-container {
+	position: relative;
+}
+
+
+#inner-code-container {
+	background: #eee;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.overlay > div {
+	background: rgba(255,0,0,0.25);
+	float: left;
+}
+
+.ui-hidden {
+	left: -9999px;
+	top: -9999px;
+}
+
+.hide-code {
+	display: none;
+}
+
+.beta {
+	font-size: 14px;
+	color: #666;
+}
+
+.input-group {
+	float: left;
+	margin-right: 20px;
+}
+
+.errorMessage {
+	color: #b30000;
+}

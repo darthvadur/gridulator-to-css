@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Gridulator to CSS Companion (Beta)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/styles.css" />
+		
+		<script src="js/jquery-1.8.2.min.js"></script>
+		
+		<script src="js/core.js"></script>
+		
+	</head>
+	<body>
+		<div class="main-container">
+			<header role="banner">
+				<h1>Gridulator to CSS <sup class="beta">BETA</sup></h1>
+			</header>
+			<section class="content" role="main">
+				<section class="input">
+					<form name="css-gridmaker-form" action="">
+						<fieldset id="input-fields">
+							<div class="input-group"><label for="overall-width">Overall Width (px)</label><input type="number" id="overall-width" placeholder="960" /></div><div class="input-group"><label for="num-columns"># of Columns</label><input type="number" id="num-columns" placeholder="8" /></div><div class="input-group"><label for="column-width">Column Width (px)</label><input type="number" id="column-width" placeholder="92" /></div><div class="input-group"><label for="gutter-width">Gutter Width (px)</label><input type="number" id="gutter-width" placeholder="32" /></div>
+						</fieldset>
+						<fieldset id="choose-layout">
+							<p><label><input type="radio" name="layout-type" checked value="fixed">Fixed</label><label><input type="radio" name="layout-type" value="fluid">Fluid</label></p>
+						</fieldset>
+					</form>
+				</section>
+				<section class="output">
+					<p class="errorMessage"></p>
+				</section>
+				<section class="bug-list">
+					<p>This tool is in Beta. If you encounter a bug which is not on the list below <a href="http://www.davearthurweb.com">please contact me</a>.  Thanks!</p>
+					<h2>Known issues</h2>
+					<ul>
+						<li>Not styled. :)</li>
+						<li>In Safari, Mobile Safari, Mobile Chrome, Opera, fluid grid overlay may not always line up with grid proportions</li>
+						
+					</ul>
+					<h2>Improvements!</h2>
+					<h3>April 2014</h3>
+					<ul>
+						<li>Simplified the CSS output float/gutter declaration using an attribute selector instead of listing out all of the grid classes.</li>
+						<li>Added a CSS output rule which removes extra gutter on left side of grid system using the <code>:first-child</code> pseudo-class selector.</li>
+						<li>Added the <code>l-</code> prefix to the grid classes to namespace them. See <a href="http://smacss.com/book/type-layout" target="_blank">SMACSS</a> for more details.</li>
+						
+					</ul>
+					
+				</section>
+			</section>
+			<footer>
+				<p>&copy;2012-2014 Dave Arthur. Gridulator is &copy;Stuntbox, LLC</p>
+			</footer>
+		</div>
+	</body>
+</html>
