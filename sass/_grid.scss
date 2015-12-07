@@ -1,0 +1,64 @@
+// Simple Sass-based grid system
+// By: Dave Arthur
+// http://www.davearthurweb.com
+
+
+// #### 1. GRID SETTINGS #### 
+// Gridulator (http://gridulator.com/) used for design 
+
+$maxWidthContainer: 960px;  // main grid container in px
+$numGridUnits: 12;          // number of units in grid
+$widthUnit: 58px;           // width of each grid unit in px
+$widthGutter: 24px;         // width of gutter in px
+
+// Note: I use a prefix so functions do not conflict with other Sass libraries. I call my grid '-flow'. You can call it something else.        
+
+// #### 2. GRID FUNCTIONS ####
+
+// ---------------------------------------------------------
+
+// A) Output a column width
+
+// @param $numCol - number of grid units spanned in column. E.g. for 1/3 proportion in 12 unit grid, $numCol would be 4
+// @return % width value
+
+// E.g. function call ->  width: -flow-grid-col(3); 
+
+@function -flow-grid-col($numCol) {
+
+	@return ( ( $numCol * $widthUnit ) + ( ( $numCol - 1 ) * $widthGutter ) ) / $maxWidthContainer * 100%;
+
+}
+
+// ---------------------------------------------------------
+
+// B) Convert to % width based on grid container.
+
+// @param $pxWidth - width (px) 
+// @param $pxContainer - the width of the relative container - set to the grid max container by default
+// @return % width value
+
+// E.g. function call ->  width: -flow-fluid-width(400px);
+
+@function -flow-fluid-width($pxWidth, $pxContainer:$maxWidthContainer) {
+
+	@return $pxWidth / $pxContainer * 100%;
+
+}
+
+// ---------------------------------------------------------
+
+// C) Output the gutter width in %
+
+// @require -flow-fluid-width()
+// @return - % width value
+
+// E.g. function call -> margin-left: -flow-gutter();
+
+@function -flow-gutter() {
+
+	@return -flow-fluid-width($widthGutter);
+
+}
+
+
