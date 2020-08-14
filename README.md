@@ -4,7 +4,7 @@
 
 ### Web Tool
 
-URL to tool: [davearthurweb.com/gridulator-to-css](http://arbutuscreative.ca/darthvadur/gridulator-to-css/)
+[Tool webpage](http://arbutuscreative.ca/darthvadur/gridulator-to-css/)
 
 [Gridulator](http://gridulator.com) is a handy tool to quickly design simple pixel based grids. Unfortunately, it doesn't create the CSS for the grid system.
 
